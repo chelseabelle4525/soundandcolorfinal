@@ -1,0 +1,39 @@
+<nav>
+  <a class= "nava" href="/">Home</a>
+  <a class= "nava" href="">About</a>
+  <img id = "profile-icon" src="https://68.media.tumblr.com/5d025161f0f362f0f37a4c36eed5e152/tumblr_oo85afcHW91qerjyso1_250.png">
+  <p class = "logo">Sound & Color</p>
+</nav>
+
+
+<div class="loginbox">
+<div class="loginform">
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
+</div>
+<video poster="<%=path_to_image('sandc.png')%>" id="bgvid" playsinline autoplay muted loop>

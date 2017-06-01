@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sound and Color</title>
+</head>
+<body>
+
+<nav>
+	<a class= "nava" href="/">Home</a>
+	<a class= "nava" href="">About</a>
+	<img id = "profile-icon" src="https://68.media.tumblr.com/5d025161f0f362f0f37a4c36eed5e152/tumblr_oo85afcHW91qerjyso1_250.png">
+	<p class = "logo">SOUND & COLOR</p>
+</nav>
+
+
+
+<div class="genrebox">
+		<div class="colors">
+
+			<form action="/playlists" method="get">
+
+				 <p class="cc">Choose a Color</p>
+
+					 <div class='colorsrow'>
+					       
+							<input type="radio" class="radio_item" value="red" name="color" id="radio1">
+							<label class="label_item" for="radio1">
+								<img  id='red' src="<%=path_to_image('red.png')%>"/>
+							</label>
+
+
+							<input type="radio" class="radio_item" value="orange" name="color" id="radio2">
+							<label class="label_item" for="radio2">
+								<img  id='orange' src="<%=path_to_image('orange.png')%>"/>
+							</label>
+
+							<input type="radio" class="radio_item" value="yellow" name="color" id="radio3">
+							<label class="label_item" for="radio3">
+								<img  id='yellow' src="<%=path_to_image('yellow.png')%>"/>
+							</label>
+							<input type="radio" class="radio_item" value="green" name="color" id="radio4">
+							<label class="label_item" for="radio4">
+							 	<img  id='green' src="<%=path_to_image('green.png')%>"/>
+							</label>
+
+							<input type="radio" class="radio_item" value="blue" name="color" id="radio5">
+							<label class="label_item" for="radio5">
+							 	<img  id='blue' src="<%=path_to_image('blue.png')%>"/>
+							</label>
+
+							<input type="radio" class="radio_item" value="purple" name="color" id="radio6">
+							<label class="label_item" for="radio6">
+							 	<img  id='purple' src="<%=path_to_image('purple.png')%>"/>
+							 </label>
+
+							<input type="radio" class="radio_item" value="red" name="color" id="radio7">
+							<label class="label_item" for="radio7">
+							 	<img  id='pink' src="<%=path_to_image('pink.png')%>"/>
+							</label>
+
+					 
+					 </div> 
+		</div>
+
+
+		<div class="genre">
+		        <p class="cc">Choose a Genre</p>
+		         <div class="words">
+
+					 <input type="checkbox" name="genre" value="Jazz">
+				        <label for="checkbox_id">	
+				        	<h3> Jazz </h3>
+				        </label>
+				    <input type="checkbox" name="genre" value="Alt Rock">
+				        <label for="checkbox_id">	
+				        	<h3> Alt Rock </h3>
+				        </label>
+				     
+				    <input type="checkbox" name="genre" value="Country">
+				        <label for="checkbox_id">	
+			        		<h3> Country </h3>
+			        	</label>
+			        <input type="checkbox" name="genre" value="Rap">
+				        <label for="checkbox_id">	
+			        		<h3> Rap </h3>
+			        	</label>
+			        <input type="checkbox" name="genre" value="Folk">
+				        <label for="checkbox_id">	
+			        <h3> Folk </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Rock">
+				        <label for="checkbox_id">	
+			        <h3> Rock </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Pop">
+				        <label for="checkbox_id">	
+			        <h3> Pop </h3><br>
+			        </label>
+			        <input type="checkbox" name="genre" value="Indie">
+				        <label for="checkbox_id">	
+			        <h3> Indie Rock </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Blues">
+				        <label for="checkbox_id">	
+			        <h3> Blues </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Classical">
+				        <label for="checkbox_id">	
+			        <h3> Classical </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Dance">
+				        <label for="checkbox_id">	
+			        <h3> Dance </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Hip/hop">
+				        <label for="checkbox_id">	
+			        <h3> Hip/Hop </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="R&B">
+				        <label for="checkbox_id">	
+			        <h3> R&B </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Techno">
+				        <label for="checkbox_id">	
+			        <h3> Techno </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="PunkRock">
+				        <label for="checkbox_id">	
+			        <h3> Punk Rock </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Pop Rock">
+				        <label for="checkbox_id">	
+			        <h3> Pop Rock </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Metal">
+				        <label for="checkbox_id">	
+			        <h3> Metal </h3>
+			        </label>
+			        <input type="checkbox" name="genre" value="Soul">
+				        <label for="checkbox_id">	
+			        <h3> soul </h3>
+			        </label><br>
+			       
+			        
+			        <button href='/playlists'>Generate Playlist</button>
+
+			     </div>
+
+
+          
+			     
+		
+        </div>
+   </form>
+</div>
+
+
+<video poster="<%=path_to_image('sandc.png')%>" id="bgvid" playsinline autoplay muted loop>
+
+
+
+
+
+<!-- <iframe src="https://player.vimeo.com/video/217566026" width="1600" height="1200" frameborder="0" autoplay="true" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+ -->
+	
+
+
+</body>
+</html>
